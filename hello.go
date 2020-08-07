@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/lixit/hello_go/morestrings"
+	"github.com/google/go-cmp/cmp"
+)
 
 func main() {
-	fmt.Println("Hello, new gopher!")
+	fmt.Println(morestrings.ReverseRunes("!oG ,olleH"))
+	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 }
+
