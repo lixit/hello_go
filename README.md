@@ -13,3 +13,16 @@ go install github.com/lixit/hello_go
 export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))
 hello_go
 ```
+
+
+```sh
+go run helloworld.go
+
+go build helloworld.go
+./helloworld
+
+go get gopl.io/ch1/helloworld
+
+go fmt
+
+```
